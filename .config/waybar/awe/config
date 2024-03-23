@@ -10,8 +10,6 @@
     "modules-right": [
         "idle_inhibitor",
         "custom/separator",
-        "backlight", 
-        "custom/separator",
         "battery",
         "custom/separator",
         "pulseaudio",
