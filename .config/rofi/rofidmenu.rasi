@@ -3,9 +3,9 @@
  * Maintainer: joekamprad [joekamprad //a_t// endeavouros.com]
  *******************************************************/
 configuration {
-    font:                "Noto Sans Regular 10";
-    show-icons:          false;
-    icon-theme:          "Qogir";
+    font:                "FiraCode Nerd Font Mono 12";
+    show-icons:          true;
+    icon-theme:          "candy-icons";
     display-drun:        "Apps";
     drun-display-format: "{name}";
     scroll-method:       0;
@@ -17,8 +17,10 @@ configuration {
 
 window {
     background-color: @background;
-    border:           0;
-    padding:          30;
+    border:           2;
+    padding:          10;
+    radius: 2;
+    border-radius: 2px;
 }
 listview {
     lines:   10;
@@ -26,7 +28,7 @@ listview {
 }
 mainbox {
     border:  0;
-    padding: 0;
+    padding: 2px;
 }
 message {
     border:       2px 0px 0px;
@@ -46,9 +48,10 @@ listview {
 }
 element {
     border: 0;
-    padding: 1px;
+    border-radius: 4px;
+    padding: 4px;
 }
-element-text {
+element-text { 
     background-color: inherit;
     text-color:       inherit;
 }
@@ -61,6 +64,7 @@ element.normal.urgent {
     text-color:       @urgent-foreground;
 }
 element.normal.active {
+    font: "FiraCode Nerd Font Mono Bold 12";
     background-color: @active-background;
     text-color:       @active-foreground;
 }
@@ -122,9 +126,13 @@ entry {
 }
 prompt {
     spacing:    0;
-    text-color: @normal-foreground;
+    text-color: @foreground;
 }
 inputbar {
+    background-color: @active-background;
+    padding:                     10px;
+    border-radius: 4px 4px 0px 0px;
+    border:                      0px 0px 2px 0px;
     children:   [textbox-prompt-colon,entry,case-indicator ];
 }
 textbox-prompt-colon {
