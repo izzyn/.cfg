@@ -2,6 +2,7 @@
  * ROFI configs i3 Apps menu for EndeavourOS
  * Maintainer: joekamprad [joekamprad //a_t// endeavouros.com]
  *******************************************************/
+
 configuration {
     font:                "FiraCode Nerd Font Mono 12";
     show-icons:          true;
@@ -11,6 +12,9 @@ configuration {
     scroll-method:       0;
     disable-history:     false;
     sidebar-mode:        false;
+    
+    modes: "window, drun, recursivebrowser";
+
 }
 
 @import "~/.config/rofi/arc_dark_transparent_colors.rasi"
@@ -19,6 +23,7 @@ window {
     background-color: @background;
     border:           2;
     padding:          10;
+    border-color: @secondary-active;
     radius: 2;
     border-radius: 2px;
 }
@@ -66,7 +71,7 @@ element.normal.urgent {
 element.normal.active {
     font: "FiraCode Nerd Font Mono Bold 12";
     background-color: @active-background;
-    text-color:       @active-foreground;
+    text-color:       @secondary-active;
 }
 element.selected.normal {
     background-color: @selected-normal-background;

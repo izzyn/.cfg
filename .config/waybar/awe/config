@@ -5,7 +5,7 @@
     "width": 1920,
     "margin": "3, 0, 2, 0",
     // Choose the order of the modules
-    "modules-left": ["custom/wmname","sway/workspaces","hyprland/workspaces","sway/mode","cpu","custom/separator","memory","custom/separator","network", "custom/recorder", "custom/audiorec"],
+    "modules-left": ["hyprland/workspaces","custom/separator","cpu","custom/separator","memory","custom/separator","network", "custom/recorder", "custom/audiorec"],
     "modules-center": ["custom/name","hyprland/window","mpd"],
     "modules-right": [
         "idle_inhibitor",
