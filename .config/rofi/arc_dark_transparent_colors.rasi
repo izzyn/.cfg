@@ -12,15 +12,16 @@
     blue:                        rgba ( 38, 139, 210, 100 % );
     urgent-foreground:           rgba ( 204, 102, 102, 100 % );
     alternate-urgent-background: rgba ( 75, 81, 96, 90 % );
-    active-foreground:           rgba ( 101, 172, 1, 100 % );
+    active-foreground:           rgba ( 101, 172, 1, 80 % );
+    secondary-active: rgba(162,0,255, 100%);
     lightbg:                     rgba ( 238, 232, 213, 100 % );
     selected-active-foreground:  rgba ( 249, 249, 249, 100 % );
-    alternate-active-background: rgba ( 45, 48, 59, 88 % );
-    background:                  rgba ( 45, 48, 59, 100 % );
+    alternate-active-background: rgba ( 45, 48, 59, 70 % );
+    background:                  rgba ( 45, 48, 59, 60 % );
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 45, 48, 59, 1 % );
     lightfg:                     rgba ( 88, 104, 117, 100 % );
-    selected-normal-background:  rgba ( 24, 26, 32, 100 % );
+    selected-normal-background:  rgba ( 24, 26, 32, 80 % );
     border-color:                rgba ( 255, 0, 183, 100 % );
     spacing:                     2;
     separatorcolor:              rgba ( 41, 38, 42, 1 % );
@@ -28,8 +29,8 @@
     selected-urgent-background:  rgba ( 165, 66, 66, 100 % );
     alternate-urgent-foreground: @urgent-foreground;
     background-color:            rgba ( 0, 0, 0, 0 % );
-    alternate-background: rgba(151, 129, 177, 100%);
+    alternate-background: rgba(151, 129, 177, 80%);
     alternate-active-foreground: @active-foreground;
-    active-background:           rgba ( 29, 31, 33, 100 % );
-    selected-active-background:  rgba ( 26, 28, 35, 100 % );
+    active-background:           rgba ( 29, 31, 33, 80 % );
+    selected-active-background:  rgba ( 26, 28, 35, 80 % );
 }
