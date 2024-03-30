@@ -6,13 +6,13 @@
 configuration {
     font:                "FiraCode Nerd Font Mono 12";
     show-icons:          true;
-    icon-theme:          "candy-icons";
+    icon-theme:          "Qogir";
     display-drun:        "Apps";
     drun-display-format: "{name}";
     scroll-method:       0;
     disable-history:     false;
     sidebar-mode:        false;
-    
+ 
     modes: "window, drun, recursivebrowser";
 
 }
@@ -28,7 +28,7 @@ window {
     border-radius: 2px;
 }
 listview {
-    lines:   10;
+    lines:   12;
     columns: 1;
 }
 mainbox {
@@ -134,7 +134,6 @@ prompt {
     text-color: @foreground;
 }
 inputbar {
-    background-color: @active-background;
     padding:                     10px;
     border-radius: 4px 4px 0px 0px;
     border:                      0px 0px 2px 0px;

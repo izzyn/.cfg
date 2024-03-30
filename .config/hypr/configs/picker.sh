@@ -1,4 +1,5 @@
 #!/bin/bash
-COLOR=$(/bin/hyprpicker -a)
+COLOR=$(/bin/hyprpicker -n)
+wl-copy $COLOR
 
-dunstify "Copied!" "<span style='color:$COLOR;'>$COLOR<\span>"
+dunstify "Copied!" "<span foreground='$COLOR'>$COLOR</span>"

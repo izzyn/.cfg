@@ -10,7 +10,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     border: none;
-    font-family: "JetBrainsMono";
+    font-family: "JetBrains Mono";
     /* Recommended font sizes: 720p: ~14px, 1080p: ~18px */
     font-size: 16px;
 }
@@ -55,6 +55,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.urgent {
+
     color: red;
 }
 
