@@ -1,4 +1,4 @@
-local lsps = {"lua_ls", "clangd", "pyright", "csharp_ls"}
+local lsps = {"lua_ls", "clangd", "pyright", "csharp_ls", "cssls", "glsl_analyzer"}
 
 return{{
         "williamboman/mason.nvim",
@@ -18,6 +18,8 @@ return{{
         lspconfig.clangd.setup({})
         lspconfig.pyright.setup({})
         lspconfig.csharp_ls.setup({})
+        lspconfig.cssls.setup({})
+        lspconfig.glsl_analyzer.setup({})
         end},
 {
 	"hrsh7th/nvim-cmp",
