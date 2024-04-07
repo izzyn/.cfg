@@ -19,6 +19,4 @@ set.tabstop = 4
 set.softtabstop = 4
 set.shiftwidth = 4
 vim.keymap.set("i", "jj", "<Esc>")
-vim.wo.number = true
-  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-
+vim.wo.relativenumber = true
