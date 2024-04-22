@@ -63,7 +63,7 @@ Column {
                     icon.width: parent.height * 0.25
                     enabled: false
                     icon.color: root.palette.text
-                    icon.source: Qt.resolvedUrl("../Assets/User.svgz")
+                    icon.source: Qt.resolvedUrl("../Assets/User.png")
             }
 
             background: Rectangle {
@@ -205,7 +205,7 @@ Column {
             renderType: Text.QtRendering
             background: Rectangle {
                 color: "transparent"
-                border.color: root.palette.text
+                border.color: parent.activeFocus ? "#8402D7" : root.palette.text
                 border.width: parent.activeFocus ? 2 : 1
                 radius: 20
             }

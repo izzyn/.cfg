@@ -151,7 +151,7 @@ Item {
         renderType: Text.QtRendering
         background: Rectangle {
             color: "transparent"
-            border.color: root.palette.text
+            border.color: parent.activeFocus ? #8702D5 : root.palette.text 
             border.width: parent.activeFocus ? 2 : 1
             radius: 20
         }
