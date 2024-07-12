@@ -93,7 +93,7 @@ alias minecraft='swallow minecraft-launcher'
 ################################################################################
 . "$HOME/.cargo/env"
 
-fastfetch
+pfetch
 alias config='/usr/bin/git --git-dir=/home/izzy/.cfg/ --work-tree=/home/izzy'
 alias kp='pkill picom'
 alias wow="echo hej från milo"
