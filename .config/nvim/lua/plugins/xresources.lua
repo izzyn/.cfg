@@ -552,5 +552,5 @@ function xresources.colorscheme()
    async_load_plugin:send()
 end
 
-xresources.colorscheme()
+--xresources.colorscheme()
 return {}

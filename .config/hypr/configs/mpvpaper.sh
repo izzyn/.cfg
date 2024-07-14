@@ -1,6 +1,7 @@
 cd ~/.config/hypr/configs/animated/.
 file="$(ls | sort -R | tail -1)"
-image=$(basename $file .jpeg)
+image="${file%.mp4}.jpeg"
+echo $file
 echo $image
 killall waybar
 killall mpvpaper

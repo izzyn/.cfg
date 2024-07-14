@@ -9,5 +9,6 @@ return {
     },
     config = function()
         vim.keymap.set("n", "NT", ":Neotree filesystem reveal left<CR>");
+        
         end
 }
