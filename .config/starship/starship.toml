@@ -5,7 +5,7 @@ show_always=true
 
 [hostname]
 ssh_only = false
-format = '[$hostname](bold #f8ae59)> '
+format = '[$hostname](bold yellow)> ' 
 disabled = false
 
 [cmd_duration]

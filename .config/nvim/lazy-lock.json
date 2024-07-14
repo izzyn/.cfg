@@ -1,4 +1,5 @@
 {
+  "LazyVim": { "branch": "main", "commit": "b4b02340084cbd835b6c32d50cc144a911e2ac8b" },
   "LuaSnip": { "branch": "master", "commit": "a7a4b4682c4b3e2ba82b82a4e6e5f5a0e79dec32" },
   "alpha-nvim": { "branch": "main", "commit": "41283fb402713fc8b327e60907f74e46166f4cfd" },
   "autoclose.nvim": { "branch": "main", "commit": "dc42806540dcf448ecb2bad6b67204410cfbe629" },
@@ -8,11 +9,12 @@
   "cmp-nvim-lua": { "branch": "main", "commit": "f12408bdb54c39c23e67cab726264c10db33ada8" },
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
   "cmp_luasnip": { "branch": "master", "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843" },
-  "dracula": { "branch": "main", "commit": "a6cb758d4b182d9f2b7e742910078d94877c1059" },
   "harpoon": { "branch": "master", "commit": "ccae1b9bec717ae284906b0bf83d720e59d12b91" },
   "indent-blankline.nvim": { "branch": "master", "commit": "821a7acd88587d966f7e464b0b3031dfe7f5680c" },
-  "lazy.nvim": { "branch": "main", "commit": "83493db50a434a4c5c648faf41e2ead80f96e478" },
+  "lazy.nvim": { "branch": "main", "commit": "cea5920abb202753004440f94ec39bcf2927e02e" },
   "lualine.nvim": { "branch": "master", "commit": "7d131a8d3ba5016229e8a1d08bf8782acea98852" },
+  "lush.nvim": { "branch": "main", "commit": "1b66ab197b177aabc2270a2c9cb8019fa5a367df" },
+  "lushwal.nvim": { "branch": "main", "commit": "e88592b6bfc81242ce309d00255254ad63935e0f" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "21d33d69a81f6351e5a5f49078b2e4f0075c8e73" },
   "mason.nvim": { "branch": "main", "commit": "c43eeb5614a09dc17c03a7fb49de2e05de203924" },
   "neo-tree.nvim": { "branch": "v3.x", "commit": "f3941c57ec85d7bdb44fa53fd858fd80f159018f" },
@@ -23,6 +25,7 @@
   "nvim-treesitter": { "branch": "master", "commit": "f148c8a76638cb6b6a6818924f647534f4eef301" },
   "nvim-web-devicons": { "branch": "master", "commit": "14ac5887110b06b89a96881d534230dac3ed134d" },
   "plenary.nvim": { "branch": "master", "commit": "4f71c0c4a196ceb656c824a70792f3df3ce6bb6d" },
+  "shipwright.nvim": { "branch": "master", "commit": "e596ab48328c31873f4f4d2e070243bf9de16ff3" },
   "telescope.nvim": { "branch": "master", "commit": "d90956833d7c27e73c621a61f20b29fdb7122709" },
   "vim-be-good": { "branch": "master", "commit": "4fa57b7957715c91326fcead58c1fa898b9b3625" }
 }
