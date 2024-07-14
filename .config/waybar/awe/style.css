@@ -7,6 +7,8 @@
 
 @define-color accent1 #F487B6;
 @define-color accent2 #b321db;
+
+@import url('file:///home/izzy/.cache/wal/colors-waybar.css');
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     border: none;
@@ -17,9 +19,10 @@
 
 window#waybar {
 
-    background-color: rgba(34, 36, 54, 0.6);
+    background-color: @background;
+    opacity: 0.8;
     /* border-bottom: 0px solid rgba(100, 114, 125, 0.5); */
-    color: #ffffff;
+    color: @foreground;
     transition-property: background-color;
     transition-duration: .5s;
     border-radius: 4px;
@@ -33,14 +36,14 @@ window#waybar.hidden {
     padding: 0px;
     margin: 4px 0 6px 0;
     background-color: transparent;
-    color: #ffffff;
+    color: @foreground;
     min-width: 36px;
 }
 
 #workspaces button.active {
     padding: 0 0 0 0;
     margin: 4px 0 6px 0;
-    background-color: @accent2;
+    background-color: @color1;
     color: #303030;
     min-width: 36px;
 }
@@ -50,7 +53,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-    background-color: @accent2;
+    background-color: @color1;
     color: #323232;
 }
 
@@ -81,13 +84,17 @@ window#waybar.hidden {
 #language {
     padding: 0px 3px;
     margin: 4px 3px 5px 3px;
-    color: @fgcolor;
+    color: @foreground;
     background-color:transparent;
 }
 
 #window,
 #workspaces {
     margin: 0 0px;
+}
+
+#name {
+    color: @foreground;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -101,16 +108,16 @@ window#waybar.hidden {
 }
 
 #clock {
-    color: @accent1;
+    color: @color10;
 }
 
 #battery {
-    color: @accent1;
+    color: @color9;
 }
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
+        background-color: @foreground;
         color: #333333;
     }
 }
@@ -125,19 +132,19 @@ label:focus {
 }
 
 #cpu {
-    color: @accent1;
+    color: @color9;
 }
 
 #memory {
-    color: @accent2;
+    color: @color5;
 }
 
 #backlight {
-    color: @accent2;
+    color: @color5;
 }
 
 #network {
-    color: @accent1;
+    color: @color6;
 }
 
 #network.disconnected {
@@ -145,7 +152,7 @@ label:focus {
 }
 
 #pulseaudio {
-    color: @accent2;
+    color: @color4;
 }
 
 #pulseaudio.muted {
@@ -153,15 +160,15 @@ label:focus {
 }
 
 #custom-power {
-    color: @accent6;
+    color: @accent4;
 }
 
 #custom-waylandvsxorg {
-    color: @accent5;
+    color: @color5;
 }
 
 #custom-pacman {
-    color: @accent2;
+    color: @color6;
 }
 
 #custom-media {
@@ -179,7 +186,7 @@ label:focus {
 }
 
 #temperature {
-    color: @accent6;
+    color: @color6;
 }
 
 #temperature.critical {
@@ -191,7 +198,7 @@ label:focus {
 }
 
 #idle_inhibitor {
-    color: @accent2
+    color: @color5
 }
 
 #mpd {

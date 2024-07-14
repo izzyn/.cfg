@@ -40,6 +40,7 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 #Aliases
+alias ls="lsd"
 alias cd="z"
 alias change_theme="python ~/.config/theme_changer/theme_changer.py"
 alias config='/usr/bin/git --git-dir=/home/izzy/.cfg/ --work-tree=/home/izzy'
@@ -47,7 +48,6 @@ alias kp='pkill picom'
 alias lunarclient='if pgrep launcher; then pkill launcher; fi && swallow ./Documents/Lunar\ Client-3.0.10.AppImage'
 alias minecraft='swallow minecraft-launcher'
 ***REMOVED***
-alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..' # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*' # show long listing but no hidden dotfiles except "."
 #The cosmetics :)
