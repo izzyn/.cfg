@@ -31,7 +31,7 @@ return{{
 		"hrsh7th/cmp-cmdline",
 		"saadparwaiz1/cmp_luasnip",
 		"L3MON4D3/LuaSnip",
-	},
+},
     config = function()
 	local cmp = require("cmp")
 	vim.opt.completeopt = { "menu", "menuone", "noselect" }
@@ -98,5 +98,11 @@ return{{
     end
 end
 
+},
+{
+  "aznhe21/actions-preview.nvim",
+  config = function()
+    vim.keymap.set({ "v", "n" }, "<leader>ca", require("actions-preview").code_actions)
+  end,
 }
 }

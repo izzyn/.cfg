@@ -3,6 +3,7 @@
  * Maintainer: joekamprad [joekamprad //a_t// endeavouros.com]
  *******************************************************/
 
+/*@import "~/.cache/wal/colors-rofi-dark.rasi"*/
 configuration {
     font:                "FiraCode Nerd Font Mono 12";
     show-icons:          true;

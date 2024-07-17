@@ -11,6 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
     })
 end
 
+vim.opt.termguicolors = true
 vim.opt.rtp:prepend(lazypath)
 require("vim-settings")
 require("lazy").setup("plugins")
@@ -20,4 +21,3 @@ set.softtabstop = 4
 set.shiftwidth = 4
 vim.keymap.set("i", "jj", "<Esc>")
 vim.wo.relativenumber = true
-
