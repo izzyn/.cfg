@@ -1,5 +1,5 @@
 {
-  description = "A simple NixOS flake";
+  description = "Base settup";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
@@ -13,7 +13,7 @@
         # Import the previous configuration.nix we used,
         # so the old configuration file still takes effect
         ./configuration.nix
-      ];
-    };
+        ];  
+     };
   };
-}
+}3

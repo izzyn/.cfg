@@ -21,3 +21,4 @@ set.softtabstop = 4
 set.shiftwidth = 4
 vim.keymap.set("i", "jj", "<Esc>")
 vim.wo.relativenumber = true
+vim.cmd[[colorscheme dracula]]

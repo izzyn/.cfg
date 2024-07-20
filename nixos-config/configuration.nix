@@ -84,13 +84,43 @@
      starship
      zsh
      pfetch
-     gcc
      python3
      unzip
      fastfetch
+     killall
+     nodejs_22
+     nodePackages.npm
+     xorg.xrdb
+     dotnetCorePackages.sdk_9_0
+     scons_4_1_0
+     zsh-autosuggestions
+     lsd
+     gnumake
+     python3Packages.requests
+     vlc
+     ffmpeg
+     ccls
+     rocmPackages_5.llvm.clang-tools-extra
+     libstdcxx5
+     bear
+     htop
+
   ];
+
+  programs.nix-ld.enable = true;
+  programs.zsh = {
+  enable = true;
+  autosuggestions.enable = true;
+  ohMyZsh.enable = true;
+  ohMyZsh.plugins = [ "git" ];
+  ohMyZsh.theme = "frisk";
+  syntaxHighlighting.enable = true;
+  };
+
   security.polkit.enable = true;
   programs.hyprland = { enable = true; xwayland.enable = true;};
+  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.support32Bit = true;
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -98,6 +128,20 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
+  fonts.packages = with pkgs; [
+    noto-fonts
+    noto-fonts-cjk
+    noto-fonts-emoji
+    liberation_ttf
+    fira-code
+    fira-code-symbols
+    mplus-outline-fonts.githubRelease
+    dina-font
+    proggyfonts
+    jetbrains-mono
+    (nerdfonts.override { fonts = [ "FiraCode" ]; })
+  ];
+  users.defaultUserShell = pkgs.zsh;
 
   # List services that you want to enable:
 
