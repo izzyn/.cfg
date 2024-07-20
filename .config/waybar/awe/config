@@ -4,7 +4,7 @@
     "position": "top",
     "height": 33,
     "width": 1920,
-    "margin": "3, 0, 2, 0",
+    "margin": "0, 0, 0, 0",
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces","custom/separator","cpu","custom/separator","memory","custom/separator","network", "custom/recorder", "custom/audiorec"],
     "modules-center": ["custom/name","hyprland/window","mpd"],

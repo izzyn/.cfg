@@ -4,9 +4,5 @@ return {
     config = function()
         local lualine = require('lualine')
 
-        lualine.setup {
-        options = {
-            theme = 'pywal16-nvim',
-          },
-        }
+        lualine.setup {        }
     end}

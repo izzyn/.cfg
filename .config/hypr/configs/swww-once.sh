@@ -1,4 +1,5 @@
-#!/bin/bash
+#! /usr/bin/env nix-shell
+#! nix-shell -i bash -p bash
 cd ~/.config/hypr/configs/backgrounds/.
 
 if [ $(cat ../latestpapers.txt | wc -l) == 0 ]; then
@@ -10,10 +11,11 @@ killall mpvpaper
 file="$(cat ../latestpapers.txt | sort -R | tail -1)"
 sed -i "\#$file#d" ../latestpapers.txt
 
-killall waybar
-killall mpvpaper
-killall ffmpeg 
-killall display
+pkill waybar
+pkill mpvpaper
+pkill ffmpeg 
+pkill display
 swww img "$file" --transition-type fade
-wal --saturate 0.9 -i $file
+#wal --saturate 0.9 -i $file
+wal --theme dracula
 waybar -c ~/.config/waybar/awe/config -s ~/.config/waybar/awe/style.css

@@ -1,4 +1,4 @@
-return {"uZer/pywal16.nvim",
+return {} --[[ {"uZer/pywal16.nvim",
 config = function()
         local pywal16 = require('pywal16')
         pywal16.setup()
@@ -6,4 +6,4 @@ config = function()
         local colors = pywal16_core.get_colors()
 
 
-end}
+end} ]]--
