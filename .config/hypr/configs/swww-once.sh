@@ -1,4 +1,4 @@
-#! /usr/bin/env nix-shell
+#! /usr/bin/bash
 #! nix-shell -i bash -p bash
 cd ~/.config/hypr/configs/backgrounds/.
 
