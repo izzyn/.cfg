@@ -93,7 +93,7 @@
     "clock": {
         "interval": 1,
         "locale": "C", 
-        "format": " &#8239;{:%I:%M %p}",
+        "format": " &#8239;{:%H:%M}",
         "format-alt": " &#8239;{:%a,%b %d}" // Icon: calendar-alt
     },
     "cpu": {
