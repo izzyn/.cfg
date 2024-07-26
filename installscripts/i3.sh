@@ -1,3 +1,3 @@
 #! /usr/bin/bash
 
-yay -S polybar feh picom 
+yay -S polybar rofi feh picom 
