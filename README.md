@@ -1,7 +1,7 @@
 
 # Installation 
 
-This is used for me as a shorthand for like 3 different guides I follow when setting up a new computer since I don't want to find all those links every time 
+This is used for me as a shorthand for like 3 different guides I follow when setting up a new computer since I don't want to find all those links every time.
 Also I add some custom things specific to my installation.
 
 Beware that this config is used together with Arch Linux, other distros are not supported, Nix support is maybe perhaps planned.
