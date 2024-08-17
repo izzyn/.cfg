@@ -13,7 +13,6 @@ Start by making sure you have ``git`` installed
 After that run these commands to clone the repository.
 ```
 echo ".cfg" >> .gitignore
-
 ```
 ## Clone from github
 
