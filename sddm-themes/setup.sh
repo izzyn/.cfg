@@ -2,7 +2,7 @@
 
 systemctl enable sddm.service
 
-sudo cp -r simple-login-sddm-theme/ /usr/share/sddm/simple-login
+sudo cp -r simple-login-sddm-theme/ /usr/share/sddm/themes/simple-login
 
 echo "Edit the [Theme] /usr/sddm/sddm.conf.d/default.conf section 'Current' to 'simple-login'"
 
