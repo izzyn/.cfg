@@ -60,7 +60,7 @@ git clone --bare git@github.com:izzyn/.cfg.git $HOME/.cfg
 First you'll want some aliases for convenience
 
 ```
-alias config='/usr/bin/git --git-dir=~/.cfg --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'
 ```
 
 ```
