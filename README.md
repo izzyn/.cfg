@@ -95,3 +95,14 @@ beware that this will restart your computer (and also requires sudo as it change
 
 If the theme is not present upon restart, it should be fixed by changing the "[Theme]" section of the configuration file in ``/etc/sddm.conf.d`` to "simple-login"
 
+## Nvidia (novideo)
+If you are running a machine with an nvidia GPU, you'll wanna install drivers for said GPU. I reccomend using the ``nvidia-inst`` package for this purpose
+Simply download ``nvidia-inst`` and run the command
+```
+yay -S nvidia-inst
+nvidia-inst
+```
+
+This will take a few minutes, and you will have to reboot your computer for the changes to take effect.
+
+
