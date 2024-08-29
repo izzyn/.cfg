@@ -54,7 +54,7 @@ alias config='git --git-dir=/home/izzy/.cfg/ --work-tree=/home/izzy'
 alias kp='pkill picom'
 alias lunarclient='if pgrep launcher; then pkill launcher; fi && swallow ./Documents/Lunar\ Client-3.0.10.AppImage'
 alias minecraft='swallow minecraft-launcher'
-***REMOVED***
+alias disbackup='mariadb-dump -P 3306 -h 130.61.171.190 -u u15_2pYY7tw4Y6 -psPowuf3eLzTjJo@WUb.^+oCB > '
 alias ll='ls -lav --ignore=..' # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*' # show long listing but no hidden dotfiles except "."
 #The cosmetics :)
