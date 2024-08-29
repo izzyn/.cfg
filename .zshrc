@@ -27,6 +27,8 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
+export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
+export DOTNET_ROOT=$HOME/.dotnet
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
  else
@@ -43,6 +45,8 @@ eval "$(zoxide init zsh)"
 . "$HOME/.cargo/env"
 
 #Aliases
+alias yippie="yay"
+alias /kill="killall"
 alias ls="lsd"
 alias cd="z"
 alias change_theme="python ~/.config/theme_changer/theme_changer.py"

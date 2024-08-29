@@ -1,4 +1,4 @@
-local lsps = {"lua_ls", "pyright", "csharp_ls", "cssls", "glsl_analyzer"}
+local lsps = {"rust_analyzer","lua_ls", "pyright", "csharp_ls", "cssls", "glsl_analyzer"}
 
 return{{
         "williamboman/mason.nvim",
@@ -14,6 +14,7 @@ return{{
 },
 {"neovim/nvim-lspconfig", config = function() 
         local lspconfig = require("lspconfig")
+        lspconfig.rust_analyzer.setup({})
         lspconfig.lua_ls.setup({})
         lspconfig.ccls.setup({})
         lspconfig.pyright.setup({})
