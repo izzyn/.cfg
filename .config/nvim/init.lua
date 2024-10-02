@@ -16,9 +16,11 @@ vim.opt.rtp:prepend(lazypath)
 require("vim-settings")
 require("lazy").setup("plugins")
 local set = vim.opt
-set.tabstop = 4
-set.softtabstop = 4
-set.shiftwidth = 4
+set.tabstop = 2
+set.softtabstop = 2
+set.shiftwidth = 2
 vim.keymap.set("i", "jj", "<Esc>")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.wo.relativenumber = true
 vim.cmd[[colorscheme dracula]]
