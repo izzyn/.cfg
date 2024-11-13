@@ -25,8 +25,8 @@ window {
     border:           2;
     padding:          10;
     border-color: @secondary-active;
-    radius: 2;
-    border-radius: 2px;
+    radius: 10;
+    border-radius: 30px;
 }
 listview {
     lines:   12;

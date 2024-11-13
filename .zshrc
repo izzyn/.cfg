@@ -49,7 +49,7 @@ alias yippie="yay"
 alias /kill="killall"
 alias ls="lsd"
 alias cd="z"
-alias change_theme="python ~/.config/theme_changer/theme_changer.py"
+alias change_theme="python ~/.config/theme_changer/theme_changer.py"§
 alias config='git --git-dir=/home/izzy/.cfg/ --work-tree=/home/izzy'
 alias kp='pkill picom'
 alias lunarclient='if pgrep launcher; then pkill launcher; fi && swallow ./Documents/Lunar\ Client-3.0.10.AppImage'
@@ -57,5 +57,6 @@ alias minecraft='swallow minecraft-launcher'
 alias disbackup='mariadb-dump -P 3306 -h 130.61.171.190 -u u15_2pYY7tw4Y6 -psPowuf3eLzTjJo@WUb.^+oCB > '
 alias ll='ls -lav --ignore=..' # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*' # show long listing but no hidden dotfiles except "."
+alias beef='echo IN PARKOUR CIVILISATION, NOBODY GOES FOR THE BEEF. ITS SAFER TO DO THE ONE BLOCK JUMP FOR THE CHICKEN, THAN THE ONE BLOCK VERTICAL JUMP FOR THE BEEF.'
 #The cosmetics :)
 pfetch
