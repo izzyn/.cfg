@@ -1,2 +1,2 @@
 swww-daemon &
-./swww-once.sh
+~/.config/hypr/configs/swww-once.sh

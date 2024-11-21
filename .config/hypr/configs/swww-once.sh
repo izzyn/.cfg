@@ -19,4 +19,4 @@ pkill display
 swww img "$file" --transition-type fade
 #wal --saturate 0.9 -i $file
 wal --theme nord
-waybar -c ~/.config/waybar/awe/config -s ~/.config/waybar/awe/style.css
+waybar 
