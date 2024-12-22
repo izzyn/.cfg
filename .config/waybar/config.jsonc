@@ -3,7 +3,7 @@
   //"layer": "top", // Waybar at top layer
   "height": 40,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-right": ["tray", "group/hw", "group/control", "clock"],
+  "modules-right": ["tray", "group/hw", "group/control", "clock", "custom/notification"],
   // Modules configuratio1
   "hyprland/workspaces": {
     "active-only": false,
@@ -90,6 +90,26 @@
     "timezone": "Europe/Stockholm",
     "format": "<span color='#ffcb6b'>󰥔</span> {:%a %b %d %R}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+  },
+    "custom/notification": {
+    "tooltip": false,
+    "format": "{} <span color='#f78c6c'>{icon}</span>",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
   },
 }
 

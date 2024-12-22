@@ -1,4 +1,4 @@
-local lsps = {"rust_analyzer","lua_ls", "pyright", "csharp_ls", "cssls", "glsl_analyzer"}
+local lsps = {"rust_analyzer","lua_ls", "pyright", "csharp_ls", "clangd", "glsl_analyzer"}
 
 return{{
         "williamboman/mason.nvim",
@@ -16,7 +16,7 @@ return{{
         local lspconfig = require("lspconfig")
         lspconfig.rust_analyzer.setup({})
         lspconfig.lua_ls.setup({})
-        lspconfig.ccls.setup({})
+        lspconfig.clangd.setup({})
         lspconfig.pyright.setup({})
         lspconfig.csharp_ls.setup({})
         lspconfig.cssls.setup({})
@@ -130,8 +130,7 @@ end
     width = 120, -- Width of the floating window
     height = 15, -- Height of the floating window
     border = {"↖", "─" ,"┐", "│", "┘", "─", "└", "│"}, -- Border characters of the floating window
-    default_mappings = true, -- Bind default mappings
-    debug = false, -- Print debug information
+    default_mappings = true, -- Print debug information
     opacity = nil, -- 0-100 opacity level of the floating window where 100 is fully transparent.
     resizing_mappings = false, -- Binds arrow keys to resizing the floating window.
     post_open_hook = nil, -- A function taking two arguments, a buffer and a window to be ran as a hook.

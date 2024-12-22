@@ -1,0 +1,9 @@
+backend = "resized"
+color_space = "lab"
+palette = "dark"
+
+[templates]
+swaync.template = './colors-swaync.css'
+swaync.target = '~/.config/swaync/themes/wallust/colors-wallust.css'
+hyprland.template = './hyprcolours.conf'
+hyprland.target = '~/.config/hypr/configs/hyprcolours.conf'

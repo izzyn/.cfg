@@ -109,3 +109,11 @@ window#waybar.empty #window {
   margin: 8px 8px 0px 4px;
 }
 
+#custom-notification {
+  background-color: @bg1;
+  border-radius: 18px;
+  padding: 0px 16px;
+  /* margin: 4px 8px 4px 4px; */
+  margin: 8px 8px 0px 4px;
+  font-family: "NotoSansMono Nerd Font";
+}

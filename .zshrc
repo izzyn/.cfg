@@ -59,4 +59,3 @@ alias ll='ls -lav --ignore=..' # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*' # show long listing but no hidden dotfiles except "."
 alias beef='echo IN PARKOUR CIVILISATION, NOBODY GOES FOR THE BEEF. ITS SAFER TO DO THE ONE BLOCK JUMP FOR THE CHICKEN, THAN THE ONE BLOCK VERTICAL JUMP FOR THE BEEF.'
 #The cosmetics :)
-pfetch
