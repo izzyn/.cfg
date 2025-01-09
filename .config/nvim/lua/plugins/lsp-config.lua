@@ -1,6 +1,7 @@
-local lsps = {"rust_analyzer","lua_ls", "pyright", "csharp_ls", "clangd", "glsl_analyzer"}
+local lsps = {"rust_analyzer","lua_ls", "pyright", "csharp_ls", "clangd", "glsl_analyzer", "arduino_language_server"}
 
-return{{
+return{
+{
         "williamboman/mason.nvim",
         config = function()
                 require("mason").setup()
@@ -21,6 +22,7 @@ return{{
         lspconfig.csharp_ls.setup({})
         lspconfig.cssls.setup({})
         lspconfig.glsl_analyzer.setup({})
+        lspconfig.arduino_language_server.setup({})
         end},
 {
 	"hrsh7th/nvim-cmp",
