@@ -50,7 +50,7 @@ alias /kill="killall"
 alias ls="lsd"
 alias cd="z"
 alias change_theme="python ~/.config/theme_changer/theme_changer.py"§
-alias config='git --git-dir=/home/izzy/.cfg/ --work-tree=/home/izzy'
+alias config='git --git-dir=/home/izzy/.cfg/ --work-tree=$HOME'
 alias kp='pkill picom'
 alias lunarclient='if pgrep launcher; then pkill launcher; fi && swallow ./Documents/Lunar\ Client-3.0.10.AppImage'
 alias minecraft='swallow minecraft-launcher'
