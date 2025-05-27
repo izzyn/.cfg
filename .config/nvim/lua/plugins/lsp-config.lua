@@ -13,9 +13,56 @@ return{
         require("mason-lspconfig").setup({ensure_installed = lsps})
         end
 },
+{
+  "MysticalDevil/inlay-hints.nvim",
+  event = "LspAttach",
+  dependencies = { "neovim/nvim-lspconfig" },
+  config = function()
+      require("inlay-hints").setup()
+  end
+
+    
+},
 {"neovim/nvim-lspconfig", config = function() 
         local lspconfig = require("lspconfig")
-        lspconfig.rust_analyzer.setup({})
+        lspconfig.rust_analyzer.setup({
+            settings = {
+              ["rust-analyzer"] = {
+                inlayHints = {
+                  bindingModeHints = {
+                    enable = false,
+                  },
+                  chainingHints = {
+                    enable = true,
+                  },
+                  closingBraceHints = {
+                    enable = true,
+                    minLines = 25,
+                  },
+                  closureReturnTypeHints = {
+                    enable = "never",
+                  },
+                  lifetimeElisionHints = {
+                    enable = "never",
+                    useParameterNames = false,
+                  },
+                  maxLength = 25,
+                  parameterHints = {
+                    enable = true,
+                  },
+                  reborrowHints = {
+                    enable = "never",
+                  },
+                  renderColons = true,
+                  typeHints = {
+                    enable = true,
+                    hideClosureInitialization = false,
+                    hideNamedConstructor = false,
+                  },
+                },
+              }
+            }
+        })
         lspconfig.lua_ls.setup({})
         lspconfig.clangd.setup({})
         lspconfig.pyright.setup({})
@@ -116,6 +163,7 @@ return{
        require('lspconfig')[v].setup {
             capabilities = capabilities
         }
+
 
     end
 end

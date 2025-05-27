@@ -1,15 +1,15 @@
 return {
   {
-  'gbprod/nord.nvim',
+  'AlexvZyl/nordic.nvim',
     config = function ()
-     vim.cmd[[colorscheme nord]]
+     vim.cmd[[colorscheme nordic]]
     end
   },
   {
         'nvim-lualine/lualine.nvim',
         opts = {
           options = {
-            theme = 'nord',
+            theme = 'nordic',
             refresh = {
               statusline = 1000,
             },
